@@ -3193,7 +3193,7 @@ html[dir=rtl] .previewManageButton {
     }
 }
 #top-section .home-image-bg {
-    background-image:url('../img/profile.png');
+    background-image:url(../img/profile.jpg);
     display:table-cell;
     vertical-align:middle;
     background-position:center;
