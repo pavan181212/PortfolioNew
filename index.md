@@ -1,0 +1,709 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@pavan181212 
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+pavan181212
+/
+PortfolioNew
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+PortfolioNew/index.html
+
+Pavan M changed
+Latest commit 4f0d4ab 3 hours ago
+ History
+ 1 contributor
+662 lines (662 sloc)  43.9 KB
+  
+<html dir="ltr" lang="en" class="home_page home_page_design s_layout1 isFreePackage  js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths parallax-active">
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <link rel="dns-prefetch preconnect" href="https://cdn-cms-s.f-static.com/" crossorigin="anonymous">
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="./img/face.png" type="image/x-icon">
+      <link rel="icon" href="./img/face.png" type="image/x-icon">
+      <!-- Regular Meta Info -->
+      <title class="s123-js-pjax">Diksha Sethi | Software Engineer</title>
+      <meta name="description" content="Diksha Sethi | Associate Consultant at Microsoft" class="s123-js-pjax">
+      <meta name="keywords" content="" class="s123-js-pjax">
+      <meta property="og:image" content="./img/background.jpg" class="s123-js-pjax">
+      <meta property="og:description" content="Diksha Sethi | Software Engineer at Microsoft" class="s123-js-pjax">
+      <meta property="og:title" content="Diksha Sethi | Software Engineer at Microsoft" class="s123-js-pjax">
+      <meta property="og:site_name" content="Diksha Sethi" class="s123-js-pjax">
+      <!-- Website CSS variables -->
+      <style>    :root {
+         --global_main_color: #019875;
+         --home_text_color: #ffffff;
+         --home_third_background_color: #000000;
+         }
+      </style>
+      <!-- Custom CSS --> <!-- Minimize CSS files -->
+      <!-- <link rel="stylesheet" href="https://css/minimize.css" type="text/css" crossorigin="anonymous"> -->
+      <link rel="stylesheet" href="./css/minimize.css" type="text/css" >
+      <link rel="stylesheet" href="./css/websiteCSS.css" class="reloadable-css" type="text/css">
+      <link rel="stylesheet" href="./css/font-awessome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="./css/style.css" type="text/css">
+      <!-- Froala Editor CSS -->
+   </head>
+   <body id="page-top" data-aos-easing="ease" data-aos-duration="200" data-aos-delay="0">
+      <div class="body">
+         <div id="websiteHeader">
+            <nav id="mainNav" class="hidden-xs navbar-default navbar-fixed-top  opacity-no affix-top">
+               <div class="site_container">
+                  <div class="navbar-header"> <a class="navbar-brand page-scroll logo_name  weight700" href="#page-top"> <span class="website-name">Diksha Sethi</span> </a> </div>
+                  <div id="top-menu">
+                     <ul class="navPages nav navbar-nav" style="opacity: 1;">
+                        <li class="moduleMenu active"><a class="page-scroll homepageMenu" href="#page-top">Home</a></li>
+                        <li class="moduleMenu" data-menu-module-id="56f3eb72d06d1"><a class="page-scroll" href="#section-56f3eb72d06d1">About me</a></li>
+                        <li class="moduleMenu" data-menu-module-id="5d4588ecc2e4a"><a class="page-scroll" href="#section-5d4588ecc2e4a">My Skills and Work Experience</a></li>
+                        <li class="moduleMenu" data-menu-module-id="5701279e11070"><a class="page-scroll" href="#section-5701279e11070">Experience Summary</a></li>
+                        <li class="moduleMenu" data-menu-module-id="5b3213745ea10"><a class="page-scroll" href="#section-5b3213745ea10">Education </a></li>
+                        <li class="moduleMenu" data-menu-module-id="5b3211cb5ea0f"><a class="page-scroll" href="#section-5b3211cb5ea0f">Projects</a></li>
+                        <li class="moduleMenu" data-menu-module-id="5d459d22c2e4e"><a class="page-scroll" href="#section-5d459d22c2e4e">Achievements</a></li>
+                        <li class="moduleMenu" data-menu-module-id="5d459b27c2e4d"><a class="page-scroll" href="#section-5d459b27c2e4d">Interests</a></li>
+                      </ul>
+                     <ul class="navActions nav navbar-nav" style="opacity: 1;">
+                        <li class="header-phone-wrapper"><a data-close-location="right" class="actionButton" role="button" data-container="body" data-toggle="phone_menuCallActionIcons"><i class="fa fa-phone"></i></a></li>
+                        <!-- <li class="header-address-wrapper"><a data-close-location="right" class="actionButton" role="button" data-container="body" data-toggle="address_menuCallActionIcons"><i class="fa fa-location-arrow"></i></a></li> -->
+                        <li class="header-social-wrapper "><a data-close-location="right" class="actionButton" role="button" data-container="body" data-toggle="social_menuCallActionIcons"><i class="fa fa-share-alt"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+         <nav id="mainNavMobile" class="navbar-fixed-top" style="opacity: 1;">
+            <div class="navPagesLeft">
+               <div class="header-menu-wrapper"><a data-close-location="left" class="actionButton" role="button" data-container="body" data-toggle="menuCallActionIcons"><i class="fa fa-bars"></i></a></div>
+            </div>
+            <div class="navbar-header"> <a class="navbar-brand page-scroll logo_name  weight700" href="#page-top"> <span class="website-name">Diksha Sethi</span> </a> </div>
+            <div class="navPagesRight">
+               <ul class="navActions nav navbar-nav">
+                  <li class="header-phone-wrapper"><a data-close-location="right" class="actionButton" role="button" data-container="body" data-toggle="phone_menuCallActionIcons"><i class="fa fa-phone"></i></a></li>
+                  <!-- <li class="header-address-wrapper"><a data-close-location="right" class="actionButton" role="button" data-container="body" data-toggle="address_menuCallActionIcons"><i class="fa fa-location-arrow"></i></a></li> -->
+                  <li class="header-social-wrapper "><a data-close-location="right" class="actionButton" role="button" data-container="body" data-toggle="social_menuCallActionIcons"><i class="fa fa-share-alt"></i></a></li>
+              </ul>
+            </div>
+         </nav>
+         <div id="top-menu-mobile" style="display:none;">
+            <ul>
+               <li class="moduleMenu active"><a class="page-scroll homepageMenu" href="#page-top">Home</a></li>
+               <li class="moduleMenu" data-menu-module-id="56f3eb72d06d1"><a class="page-scroll" href="#section-56f3eb72d06d1">About me</a></li>
+               <li class="moduleMenu" data-menu-module-id="5d4588ecc2e4a"><a class="page-scroll" href="#section-5d4588ecc2e4a">My Skills and Work Experience</a></li>
+               <li class="moduleMenu" data-menu-module-id="5701279e11070"><a class="page-scroll" href="#section-5701279e11070">Experience Summary</a></li>
+               <li class="moduleMenu" data-menu-module-id="5b3213745ea10"><a class="page-scroll" href="#section-5b3213745ea10">Education </a></li>
+               <li class="moduleMenu" data-menu-module-id="5b3211cb5ea0f"><a class="page-scroll" href="#section-5b3211cb5ea0f">Projects</a></li>
+               <li class="moduleMenu" data-menu-module-id="5d459d22c2e4e"><a class="page-scroll" href="#section-5d459d22c2e4e">Achievements</a></li>
+               <li class="moduleMenu" data-menu-module-id="5d459b27c2e4d"><a class="page-scroll" href="#section-5d459b27c2e4d">Interests</a></li>
+            </ul>
+         </div>
+         <div id="s123PjaxMainContainer">
+           <section id="top-section" class="homepage_style_1 fitScreen main-structure-101 section-homepage-layout-101">
+              <div class="homepage-layout-24 homepage-layout-101 container ">
+                 <div class="home_main_wrapper">
+                    <div class="left">
+                       <div class="left_container home_third_background_color">
+                          <div class="boxBorder ">
+                             <h1 id="home_siteSlogan" class=" weight400   -3 15">Associate Consultant <br>At <br>Microsoft</h1>
+                             <a id="home_buttonText" onclick="MoveFirstSection();" class="btn btn-primary btn-xl ">Welcome</a>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="right">
+                       <div class="home_background_wrapper">
+                          <div class="home-image-bg"></div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+            </section>
+            <div id="s123ModulesContainer" class="s123-modules-container">
+               <section id="section-56f3eb72d06d1" class="s123-module s123-module-about layout-2 layout-3 bg-primary">
+                  <div data-aos="fade-up" class="container-fluid page_header_style page_header_style_ aos-init">
+                     <div class="row">
+                        <div class="container">
+                           <div class="row modulesTitle">
+                              <div class="col-xs-12 text-center">
+                                 <h2 id="section-56f3eb72d06d1-title" class="s123-page-header">About me</h2>
+                                 <hr class="small">
+                                 <h4 id="section-56f3eb72d06d1-slogan"></h4>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container aos-init" data-aos="fade-up">
+                     <div class="row sides">
+                        <div class="col-xs-12 col-md-12">
+                           <div class="responsive-handler fr-view breakable"><br>I am Software Engineer with 2.5 years of industry experience in Backened Development.<br><br>A Software Engineer with hands-on a wide range of technologies, analytics, automation, performance optimization, website construction, and maintenance.<br><br>I'm a Self-directed and motivated programmer experienced working effectively in dynamic environments. A Quick learner with strong design and integration problem-solving skills.<br><br><br></div>
+                           <a href="https://www.linkedin.com/in/diksha-sethi-336377125/">See my LinkedIn profile</a> or download my <a href="Sethi_Diksha_CV.pdf" download="Sethi_Diksha_Resume"> Resume </a> for more career details.
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section id="section-5d4588ecc2e4a" class="s123-module s123-module-team layout-2">
+                 <div data-aos="fade-up" class="container-fluid page_header_style page_header_style_ aos-init aos-animate">
+                    <div class="row">
+                       <div class="container">
+                          <div class="row modulesTitle">
+                             <div class="col-xs-12 text-center">
+                                <h2 id="section-5d4588ecc2e4a-title" class="s123-page-header">Skills & Experience</h2>
+                                <hr class="small">
+                                <h4 id="section-5d4588ecc2e4a-slogan"></h4>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="container aos-init aos-animate" data-aos="fade-up">
+                    <!-- Items area -->
+                    <div class="row text-center team-category col-lg-8" data-categories-filter="all" style="display: block;">
+                       <div class="col-md-4 col-sm-4 team-member-wrap col-centered">
+                          <div class="team-member">
+                             <div class="team-image" style="background-image:url(./img/Microsoft.jpg);"></div>
+                             <div class="team-details">
+                                <div>
+                                   <h4 class="member-name">Microsoft</h4>
+                                </div>
+                                <div>
+                                   <p class="position">.Net Developer</p>
+                                </div>
+                                <div>
+                                   <p>Feb 2020 - Present</p>
+                                </div>
+                                <ul class="social"></ul>
+                             </div>
+                          </div>
+                       </div>
+                     <div class="col-md-4 col-sm-4 team-member-wrap col-centered">
+                        <div class="team-member">
+                           <div class="team-image" style="background-image:url(./img/Bold.png);"></div>
+                           <div class="team-details">
+                              <div>
+                                 <h4 class="member-name">BOLD Technology Systems Pvt. Ltd</h4>
+                              </div>
+                              <div>
+                                 <p class="position">Associate Software Deveoper</p>
+                              </div>
+                              <div>
+                                 <p>Sep 2019 - Jan 2020</p>
+                              </div>
+                              <ul class="social"></ul>
+                           </div>
+                        </div>
+                     </div>
+                       <div class="col-md-4 col-sm-4 team-member-wrap col-centered">
+                          <div class="team-member">
+                             <div class="team-image" style="background-image:url(./img/IVP.jpg);"></div>
+                             <div class="team-details">
+                                <div>
+                                   <h4 class="member-name">Indus Valley Partners</h4>
+                                </div>
+                                <div>
+                                   <p class="position">Associate Implementation Engineer</p>
+                                </div>
+                                <div>
+                                   <p>Oct 2017 - August 2019</p>
+                                </div>
+                                <ul class="social"></ul>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <ul id="skill">
+                        <li><span class="bar wordpress"></span><h3>Languages - (c#,JAVA,c++)</h3></li>
+                        <li><span class="bar graphic-design"></span><h3>Scripting - (JavaScript)</h3></li>
+                        <li><span class="bar html-css"></span><h3>Front End - (HTML, CSS)</h3></li>
+                        <li><span class="bar database"></span><h3>Databases - (SQl,MySQL) </h3></li>
+                        <!-- <li><span class="bar jquery"></span><h3>CMS - (Drupal)</h3></li> -->
+                        <li><span class="bar drupal"></span><h3>API - (RestAPI)</h3></li>
+                        <li><span class="bar ide"></span><h3>Deployment - (Git, JIRA, Unit Testing, Agile Process) </h3></li>
+                      </ul>
+                    </div>
+                 </div>
+               </section>
+               <section id="section-5701279e11070" class="s123-module s123-module-services layout-4">
+                  <div data-aos="fade-up" class="container-fluid page_header_style page_header_style_ aos-init">
+                     <div class="row">
+                        <div class="container">
+                           <div class="row modulesTitle">
+                              <div class="col-xs-12 text-center">
+                                 <h2 id="section-5701279e11070-title" class="s123-page-header">Experience Summary</h2>
+                                 <hr class="small">
+                                 <h4 id="section-5701279e11070-slogan"></h4>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container aos-init" data-aos="fade-up">
+                     <div class="row text-center">
+                        <div class="col-md-6 col-sm-6 col-centered">
+                           <a href="/web-development.html">
+                              <div class="service-item box-primary s123-box-top-primary-border s123-box-flying-up">
+                                 <span class="fa-stack fa-4x img-circle" style="background-image:url(./img/code.jpg);"></span>
+                                 <h4><strong>Web Development</strong></h4>
+                                 <p>Excelled in rapid Application development and management of technological issues for assigned projects, earning the highest customer satisfaction rating for all software solutions delivered.Provided user requirements analysis, design and programming support for enhancement of Web application accessed by million users worldwide
+                                 </p>
+                                 <a href="/web-development.html" class="cd-read-more btn btn-primary">Learn More</a>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-centered">
+                           <a href="/backened-development.html">
+                              <div class="service-item box-primary s123-box-top-primary-border s123-box-flying-up">
+                                 <span class="fa-stack fa-4x img-circle" style="background-image:url(./img/automation.jpg);"></span>
+                                 <h4><strong>Backened Development</strong></h4>
+                                 <p>Automated systems by adopting emerging standards for software application development architecture and tools. Introduced methodologies and best practices that enhanced product definition, release processes and customization of applications to user needs.
+                                 </p>
+                                    <a href="/backened-development.html" class="cd-read-more btn btn-primary">Learn More</a>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section id="section-5b3213745ea10" class="s123-module s123-module-timeline bg-primary">
+                  <div data-aos="fade-up" class="container-fluid page_header_style page_header_style_ aos-init">
+                     <div class="row">
+                        <div class="container">
+                           <div class="row modulesTitle">
+                              <div class="col-xs-12 text-center">
+                                 <h2 id="section-5b3213745ea10-title" class="s123-page-header">Education </h2>
+                                 <hr class="small">
+                                 <h4 id="section-5b3213745ea10-slogan"></h4>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container aos-init" data-aos="fade-up">
+                     <div class="cd-timeline cd-container">
+                        <div class="cd-timeline-block">
+                           <div class="cd-timeline-img text-primary bg-primary bounce-in" style="background:#fa5b0f;color:#ffffff;"><i class="fa site123-image-icon fa-university"></i></div>
+                           <div class="cd-timeline-content box-primary s123-box-bottom-primary-border s123-box-padding bounce-in">
+                              <h2><strong></strong>Chandigarh Group of Colleges</h2>
+                              <p>Bachelor of Technology, Computer Science</p>
+                              <p>Percent - 85</p>
+                              <span class="cd-date">June&nbsp;01,&nbsp;2018</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section id="section-5b3211cb5ea0f" class="s123-module s123-module-testimonials layout-1">
+                  <div data-aos="fade-up" class="container-fluid page_header_style page_header_style_ aos-init">
+                     <div class="row">
+                        <div class="container">
+                           <div class="row modulesTitle">
+                              <div class="col-xs-12 text-center">
+                                 <h2 id="section-5b3211cb5ea0f-title" class="s123-page-header">Projects</h2>
+                                 <hr class="small">
+                                 <h4 id="section-5b3211cb5ea0f-slogan"></h4>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container aos-init" data-aos="fade-up">
+                     <!-- /.row --><!-- Items Area -->
+                     <div class="row">
+                        <div class="col-xs-12 testimonials-category" data-categories-filter="all" style="display: block;">
+                           <div data-ride="carousel" class="carousel slide">
+                              <ol class="carousel-indicators">
+                                 <li data-slide-to="0" class="active"></li>
+                                 <li data-slide-to="1" class=""></li>
+                                 <li data-slide-to="2" class=""></li>
+                                 <li data-slide-to="3" class=""></li>
+                              </ol>
+                              <div class="carousel-inner">
+                                 <div class="item" style="min-height: 242px;">
+                                    <blockquote>
+                                       <div class="row">
+                                          <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-3 text-center"><img alt="Ecommerce Paymentss" class="img-circle" src="./img/terrorism.png"></div>
+                                          <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-9">
+                                             <p> Ecommerce Payments:
+                                               <ul>
+                                                  <li>Worked on development of microservices,web jobs and implemented Baleto payment method using web apis</li>
+                                                  <li>Worked on Apache Solr and integrate it through the web job.</li>
+                                                  <li>Worked on various recurring transactions scenarios and customer search field apis.</li>
+                                              </ul>
+                                                <b>Technology:</b> c#,Asp.Net MVC, Web Api, Apache Solr
+                                             </p>
+                                          </div>
+                                       </div>
+                                    </blockquote>
+                                 </div>
+                                 <div class="item" style="min-height: 242px;">
+                                    <blockquote>
+                                       <div class="row">
+                                          <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-3 text-center"><img alt="Discovery Tool" class="img-circle" src="./img/research.jpg"></div>
+                                          <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-9">
+                                             <p>Worked on building a tool which is beneficial when we move our application from on premise to cloud.This tool analyze all the loopholes that can cause break in moving our application to cloud.
+                                                  <br/><br/><b>Technology:</b> Java,.Net,Neo4j
+                                             </p>
+                                          </div>
+                                       </div>
+                                    </blockquote>
+                                 </div>
+                                 <div class="item active" style="min-height: 242px;">
+                                    <blockquote>
+                                       <div class="row">
+                                          <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-3 text-center"><img alt="Security Master Repository" class="img-circle" src="./img/github.png"></div>
+                                          <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-9">
+                                             <p>Security Master Repository Solution for Hedge Funds
+                                                <br/><br/><b>Technology:</b> c#,SQL </p>
+                                          </div>
+                                       </div>
+                                    </blockquote>
+                                 </div>
+                                 <div class="item" style="min-height: 242px;">
+                                    <blockquote>
+                                       <div class="row">
+                                          <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-3 text-center"><img alt="Polaris datawarehouse" class="img-circle" src="./img/network.jpeg"></div>
+                                          <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-9">
+                                             <ul>
+                                                <li>Developed product Polaris which is a datawarehouse specifically designed for Alternative Asset Managers in multi-Strategy,
+                                                   multi-Counterparty, multi-Asset class environments.</li>
+                                                <li>Polaris,comes with a suite of pre-built business applications and reports that can reduce time-to-market and
+                                                   operational risk. </li>
+                                             </ul>
+                                             <b>Technology:</b> c#,SQL,Javascript
+                                             </p>
+                                          </div>
+                                       </div>
+                                    </blockquote>
+                                 </div>
+                              </div>
+                              <!-- Carousel Buttons Next/Prev --><a href="javascript:void(0);" class="carousel-control left"><i class="fa fa-chevron-left"></i></a><a href="javascript:void(0);" class="carousel-control right"><i class="fa fa-chevron-right"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- /.container -->
+               </section>
+               <section id="section-5d459d22c2e4e" class="s123-module s123-module-about layout-2 layout-2">
+                  <div data-aos="fade-up" class="container-fluid page_header_style page_header_style_ aos-init aos-animate">
+                     <div class="row">
+                        <div class="container">
+                           <div class="row modulesTitle">
+                              <div class="col-xs-12 text-center">
+                                 <h2 id="section-5d459d22c2e4e-title" class="s123-page-header">Achievements</h2>
+                                 <hr class="small">
+                                 <h4 id="section-5d459d22c2e4e-slogan"></h4>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container aos-init aos-animate" data-aos="fade-up">
+                     <div class="row sides">
+                        <div class="col-xs-12 col-md-6">
+                           <div class="responsive-handler fr-view breakable">
+                              <ul>
+                                 <li><strong>Client Appreciation Award</strong> - Handled multiple projects and delievered before the deadlines successfully.</li>
+                                 <li> <strong>Gold Medalist in College</strong> - Gold Medalist in College.</li>
+                                 <li> <strong>Second Runner up</strong> - Bagged third position in Boggie Woggie Reality Dance Show</li>
+                              </ul>
+                              <br>&nbsp; &nbsp;&nbsp;
+                           </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                           <div class="separateImages text-center"> <img src="./img/success.jpeg" class="img-rounded img-responsive" style="max-height:400px;max-width:80%;display:inline-block;" alt="Achievements"> </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section id="section-5d459b27c2e4d" class="s123-module s123-module-team layout-5 bg-primary">
+                 <div data-aos="fade-up" class="container-fluid page_header_style page_header_style_ aos-init aos-animate">
+                    <div class="row">
+                       <div class="container">
+                          <div class="row modulesTitle">
+                             <div class="col-xs-12 text-center">
+                                <h2 id="section-5d459b27c2e4d-title" class="s123-page-header">Interests</h2>
+                                <hr class="small">
+                                <h4 id="section-5d459b27c2e4d-slogan"></h4>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="container aos-init aos-animate" data-aos="fade-up">
+                    <!-- Items area -->
+                    <div class="row text-center">
+                       <div class="team-category" data-categories-filter="all" style="display: block;">
+                          <div class="col-md-3 col-sm-4 col-centered">
+                             <div class="team-m-member">
+                                <div class="team-m-image" style="background-image:url(./img/programmer.jpg);"></div>
+                                <div class="team-m-details">
+                                   <div>
+                                      <h3 class="team-m-name">Programming</h3>
+                                   </div>
+                                   <div>
+                                      <p></p>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-md-3 col-sm-4 col-centered">
+                             <div class="team-m-member">
+                                <div class="team-m-image" style="background-image:url(./img/dancing.jpg);"></div>
+                                <div class="team-m-details">
+                                   <div>
+                                      <h3 class="team-m-name">Dancing</h3>
+                                   </div>
+                                   <div>
+                                      <p></p>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-md-3 col-sm-4 col-centered">
+                             <div class="team-m-member">
+                                <div class="team-m-image" style="background-image:url(./img/travelling.jpg);"></div>
+                                <div class="team-m-details">
+                                   <div>
+                                      <h3 class="team-m-name">Travelling</h3>
+                                   </div>
+                                   <div>
+                                      <p></p>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </section>
+            </div>
+            <footer class="global_footer footer_2">
+               <div class="part1">
+                  <div class="social-details-container social-icons">
+                     <ul class="list-inline">
+                        <li><a href="https://www.linkedin.com/in/diksha-sethi-336377125/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                        <li><a href="https://github.com/dikshuuu" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+                        <!-- <li><a href="mailto:poagarwal@cs.stonybrook.edu"><i class="fa fa-envelope fa-fw" style="font-size: 24px;"></i></a></li> -->
+                     </ul>
+                  </div>
+                  <div class="hidden-xs">
+                     <ul class="navPages nav navbar-nav" style="opacity: 1;">
+                        <li class="moduleMenu active"><a class="page-scroll homepageMenu" href="#page-top">Home</a></li>
+                        <li class="moduleMenu" data-menu-module-id="56f3eb72d06d1"><a class="page-scroll" href="#section-56f3eb72d06d1">About me</a></li>
+                        <li class="moduleMenu" data-menu-module-id="5d4588ecc2e4a"><a class="page-scroll" href="#section-5d4588ecc2e4a">My Skills and Work Experience</a></li>
+                        <li class="moduleMenu" data-menu-module-id="5701279e11070"><a class="page-scroll" href="#section-5701279e11070">Experience Summary</a></li>
+                        <li class="moduleMenu" data-menu-module-id="5b3213745ea10"><a class="page-scroll" href="#section-5b3213745ea10">Education </a></li>
+                        <li class="moduleMenu" data-menu-module-id="5b3211cb5ea0f"><a class="page-scroll" href="#section-5b3211cb5ea0f">Projects</a></li>
+                        <li class="moduleMenu" data-menu-module-id="5d459d22c2e4e"><a class="page-scroll" href="#section-5d459d22c2e4e">Achievements</a></li>
+                        <li class="moduleMenu" data-menu-module-id="5d459b27c2e4d"><a class="page-scroll" href="#section-5d459b27c2e4d">Interest</a></li>
+                     </ul>
+                  </div>
+                  <div> Copyright © 2020 All rights reserved - <span class="website-name-preview-helper">Diksha Sethi</span> </div>
+               </div>
+            </footer>
+         </div>
+      </div>
+      <div>
+         <div id="header-phone-content" style="display:none;">
+            <div class="popover_phone_icons">
+               <div class="global-contact-details-container text-center">
+                  <ul class="list-unstyled">
+                     <li> <a href="tel:7417338123"> <i class="fa fa-phone fa-fw"></i><span dir="ltr">7417338123</span> </a> </li>
+                     <li><a href="mailto:dikshasethi96@gmail.com"><i class="fa fa-envelope-o fa-fw"></i>dikshasethi96@gmail.com</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div id="header-social-content" style="display:none;">
+            <div class="popover_icons">
+               <div class="social-details-container social-icons">
+                  <ul class="list-inline">
+                     <li><a href="https://www.linkedin.com/in/diksha-sethi-336377125/" target="_blank"><i class="fa fa-linkedin fa-4x"></i></a></li>
+                     <li><a href="https://github.com/dikshuuu" target="_blank"><i class="fa fa-github fa-4x"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <input type="hidden" id="facebook_url" name="facebook_url" value=""> <input type="hidden" id="twitter_url" name="twitter_url" value="">
+      </div>
+      <a id="gotoTop" class="gotoTop page-scroll" style="display: none;" href="#page-top"><i class="fa fa-angle-up"></i></a> <input type="hidden" id="layoutNUM" name="layoutNUM" value="1"> <input type="hidden" id="footer_layout" name="footer_layout" value="2"> <input type="hidden" id="layoutMenuPositionTXT" name="layoutMenuPositionTXT" value="top"> <input type="hidden" id="versionNUM" name="versionNUM" value="2"> <input type="hidden" id="w" name="w" value=""> <input type="hidden" id="websiteID" value="2414293"> <input type="hidden" id="onepage" value="1"> <input type="hidden" id="hasPlugins" value="0"> <input type="hidden" id="pjaxSupported" value="1">
+      <!-- JavaScript Translations Object --><script>var translations = {
+      "sent"	  		   : "Sent!",
+      "enterYourQuery" 	   : "Enter your query",
+      "loading"		   : "Loading...",
+      "closeEsc"		   : "Close (Esc)",
+      "previousLeftArrowKey"	   : "Previous (Left arrow key)",
+      "NextRightArrowKey"	   : "Next (Right arrow key)",
+      "of"		   	   : "of",
+      "more"		   	   : "MORE",
+      "cart"		   	   :"Cart",
+      "SearchResult"		   : "Search Result",
+      "ChooseTheAmountDonate"    : "Choose the amount you want to donate",
+      "blogReviewMessage"	   : "Thank you! Your comment will be published after being approved by the admin.",
+      "productReviewMessage"	   : "Thank you! Your review will be published after being approved by the administrator.",
+      "ConfirmMailingSubscrive"  : "Please Confirm Your Email Address to Complete Your Subscription",
+      "subscribeTellAboutYou"  : "Please tell us about yourself",
+      "imageCouldNotLoaded"      : "<a href=\"%url%\">The image<\/a> could not be loaded.",
+      "searchInputValidation"    : "Please enter a valid search query.",
+      "jqueryValidMsgRequire"    : "This field is required.",
+      "jqueryValidMsgRemote"     : "Please fix this field.",
+      "jqueryValidMsgEmail"      : "Please enter a valid email address.",
+      "jqueryValidMsgUrl"        : "Please enter a valid URL.",
+      "jqueryValidMsgDate"       : "Please enter a valid date.",
+      "jqueryValidMsgDateISO"    : "Please enter a valid date (ISO).",
+      "jqueryValidMsgNumber"     : "Please enter a valid number.",
+      "jqueryValidMsgDigits"     : "Please enter only digits.",
+      "jqueryValidMsgCreditcard" : "Please enter a valid credit card number.",
+      "jqueryValidMsgEqualTo"    : "Please enter the same value again.",
+      "jqueryValidMsgAccept"     : "Please enter a value with a valid extension.",
+      "jqueryValidMsgMaxlength"  : "Please enter no more than {0} characters.",
+      "jqueryValidMsgMinlength"  : "Please enter at least {0} characters.",
+      "jqueryValidMsgRangelength":"Please enter a value between {0} and {1} characters long.",
+      "jqueryValidMsgRange"	   : "Please enter a value between {0} and {1}.",
+      "jqueryValidMsgMax"	   : "Please enter a value less than or equal to {0}.",
+      "jqueryValidMsgMin"	   : "Please enter a value greater than or equal to {0}.",
+      "sending"		   : "Sending",
+      "firstName"		   : "First Name",
+      "lastName"		   : "Last Name",
+      "phone"			   : "Phone",
+      "emailAddress"		   : "Email Address",
+      "fileUpload"		   : "File Upload",
+      "send"			   : "Send",
+      "search"		   : "Search",
+      "productvalidatorPopover"  : "Required field",
+      "SpecialRequest" 	   : "Special Request",
+      "restaurantReservation"    : "Restaurant Reservation",
+      "ThankYouAuto"		   : "Order completed, thank you for your order!",
+      "ThankYouManual"	   : "Order is not completed yet, we will contact you soon",
+      "Ok"			   : "OK",
+      "OrderNumber"		   : "Order Number",
+      "Date"			   : "Date",
+      "Hour"			   : "Hour",
+      "TableSize"		   : "Table Size",
+      "NoAvailableTime"	   : "Sorry, there is no available time for this date, please try another date.",
+      "message"	           : "Message",
+      "ThankYou"	           : "Thank you",
+      "error_title"	   	   : "Error",
+      "error_body"	   	   : "Oops something went wrong",
+      "limit20Tickets"	   : "Limit of 20 Tickets",
+      "registrationClosed"       : "Registration is closed. Please contact us for more information.",
+      "Sunday"		   : "Sunday",
+      "Monday"		   : "Monday",
+      "Tuesday"		   : "Tuesday",
+      "Wednesday"		   : "Wednesday",
+      "Thursday"		   : "Thursday",
+      "Friday"		   : "Friday",
+      "Saturday"		   : "Saturday",
+      "foodDeliverybootBoxTitle" : "Order Window",
+      "addToCart"                : "Add To Cart",
+      "save"                	   : "Save",
+      "ThankYouAfterSubmmit" 	   : "Thank you for contacting us. We have received your message and will respond to you soon.",
+      "country" 					: "Country",
+      "productQuntityLimit" 		: "The product is limited to a maximum of {{units_limitation}} units.",
+      "productQuntityLimitMin" 		: "The product is limited to a minimum of {{units_limitation}} units.",
+      "forumDeleteTopic" 		: "Deleting a topic will also permanently remove all related replies. Are you sure you want to delete it?",
+      "forumDeleteTopicTitle" 	: "Delete Topic",
+      "forumDeleteReply" 		: "Are you sure you want to delete this reply?",
+      "forumDeleteReplyTitle" 	: "Delete Reply",
+      "forumNewTopic" 	: "New Topic",
+      "forumCreateNewTopic" 	: "Create a new topic",
+      "forumCountOfTotalPosts" 	: "Post a total of {{numbers_of_posts}} posts",
+      "forumSearchPlaceholder" 	: "search topics, posts, or categories",
+      "forumLastReply" 	: "Last Reply",
+      "follow" 	: "Follow",
+      "following" 	: "Following",
+      "forumReplies" 	: "Replies",
+      "forumFrequentPosters" 	: "Frequent Posters",
+      "chooseCategory" 	: "Choose Category",
+      "linkCopiedToClipboard" 	: "Link copied to clipboard",
+      "edit" 	: "Edit",
+      "created" 	: "Created",
+      "seeMore" 	: "See More",
+      "options" 	: "Options",
+      "joined" 	: "Joined",
+      "posted" 	: "Posted",
+      "category" 	: "Category",
+      "yes" 	: "Yes",
+      "no" 	: "No",
+      "insertTopicTitle" 	: "Insert Topic Title",
+      "insertTopicMessage" 	: "Insert Message Topic",
+      "reply" 	: "Reply",
+      "addReply" 	: "Add reply",
+      "address" 	: "Address:",
+      "city" 	: "City:",
+      "state" 	: "State:",
+      "zipCode" 	: "Zip\/Postal Code:",
+      "instructions" 	: "Instructions:",
+      "country_v2" : "Country:",
+      "chooseDate": "Choose Date",
+      "chooseDateAndTime": "Choose Date & Time",
+      "chooseTime": "Choose Time",
+      "total" : "Total:",
+      "reviewBad": "bad",
+      "reviewPoor": "poor",
+      "reviewRegular": "regular",
+      "reviewGood": "good",
+      "reviewGorgeous": "gorgeous",
+      "popupButtonSelected": "Select"	};</script><!-- JavaScript Translations Object -->
+      <!-- Minimize JS files --><script src="./js/minimize.js"></script> <!-- Pjax Helper -->
+      <div class="s123-front-last-element hidden"></div>
+      <div id="cboxOverlay" style="display: none;"></div>
+      <div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;">
+         <div id="cboxWrapper">
+            <div>
+               <div id="cboxTopLeft" style="float: left;"></div>
+               <div id="cboxTopCenter" style="float: left;"></div>
+               <div id="cboxTopRight" style="float: left;"></div>
+            </div>
+            <div style="clear: left;">
+               <div id="cboxMiddleLeft" style="float: left;"></div>
+               <div id="cboxContent" style="float: left;">
+                  <div id="cboxTitle" style="float: left;"></div>
+                  <div id="cboxCurrent" style="float: left;"></div>
+                  <button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button type="button" id="cboxSlideshow"></button>
+                  <div id="cboxLoadingOverlay" style="float: left;"></div>
+                  <div id="cboxLoadingGraphic" style="float: left;"></div>
+               </div>
+               <div id="cboxMiddleRight" style="float: left;"></div>
+            </div>
+            <div style="clear: left;">
+               <div id="cboxBottomLeft" style="float: left;"></div>
+               <div id="cboxBottomCenter" style="float: left;"></div>
+               <div id="cboxBottomRight" style="float: left;"></div>
+            </div>
+         </div>
+         <div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div>
+      </div>
+   </body>
+</html>
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
